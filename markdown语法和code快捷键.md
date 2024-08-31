@@ -135,7 +135,7 @@ graph LR
 |ctrl T      |剪切|
 |Tab         |接受建议|
 |Esc         |拒绝建议|
-|Ctrl + Enter|十条建议|
+|Ctrl + Enter|进入下一行|
 |Alt + [或]  |上/下一条建议|
 |Alt + \     |触发行内建议|
 
