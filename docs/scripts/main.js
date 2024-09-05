@@ -1,11 +1,11 @@
-let myImage = document.querySelector("#img1");
+let myImage = document.querySelector("#img4");
 
 myImage.onclick = function (){
     let mySrc = myImage.getAttribute("src");
-    if (mySrc === "../pictures/img1.jpg") {
-        myImage.setAttribute("src", "../pictures/img2.jpg");
+    if (mySrc === "pictures/img4.jpg") {
+        myImage.setAttribute("src", "pictures/img3.jpg");
     } else {
-        myImage.setAttribute("src", "../pictures/img1.jpg");
+        myImage.setAttribute("src", "pictures/img4.jpg");
     }
 }
 
