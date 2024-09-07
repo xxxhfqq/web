@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单元格中多位置内容</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        td {
+            border: 1px solid black;
+            width: 200px; /* 固定单元格宽度 */
+            height: 100px; /* 固定单元格高度 */
+            position: relative; /* 为绝对定位子元素提供参考 */
+            padding: 10px; /* 内边距 */
+        }
+        .top-left {
+            position: absolute;
+            top: 10px; /* 距离顶部 10px */
+            left: 10px; /* 距离左侧 10px */
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 10px; /* 距离底部 10px */
+            right: 10px; /* 距离右侧 10px */
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>
+            <div class="top-left">左上角内容</div>
+            <div class="bottom-right">右下角内容</div>
+        </td>
+        <td>其他内容</td>
+    </tr>
+</table>
+
+</body>
+</html>
